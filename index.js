@@ -94,6 +94,8 @@ function reset() {
 
 	scoreEl.textContent = 0;
 
+	gameOverEl.style.display = "hidden";
+
 	main();
 }
 
