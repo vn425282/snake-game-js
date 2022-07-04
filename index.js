@@ -85,6 +85,15 @@ function reset() {
 		{x: 170, y: 200},
 		{x: 160, y: 200}
 	];
+
+	dx = 10;
+	dy = 0;
+
+	foodX = randomFood(0, snake[0].x);
+	foodY = randomFood(0, snake[0].y);
+
+	scoreEl.textContent = 0;
+
 	main();
 }
 
