@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Snake game</title>
+        <style>
+            .main-contain {
+                position: absolute;
+                top: 35%;
+                right: 50%;
+                transform: translate(50%, -50%);
+            }
+
+            #game-over {
+                display: none;
+            }
+
+            .score {
+                color: orange;
+            }
+
+            .control {
+                width: 100%;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="control">
+            <h3 id="game-over">Game Over !!!</h3>
+            <h3 class="score">Score: <span id="score">0</span></h3>
+            <input type="button" onclick="reset()" value="reset"></div>
+        </div>
+        <div class="main-contain">
+            <canvas
+                id="gameCanvas"
+                width="400"
+                height="400"
+            >
+            </canvas>
+        </div>
+        <script type="application/javascript" src="./index.js"></script>
+    </body>
+</html>
